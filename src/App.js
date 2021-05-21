@@ -1,6 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 
+import React from "react"
 import Book from './book'; 
 
 export default () => { 
@@ -9,7 +10,7 @@ export default () => {
 
         <div> 
 
-            <Book />
+            <Book title="Viatge a la Lluna" />
 
         </div> 
 

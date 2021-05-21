@@ -1,8 +1,8 @@
 import React from 'react';
 
-const Book = () => {
+const Book = (props) => {
     return (
-    <h1>Viatge a la Lluna</h1>
+    <h1>{props.title}</h1>
     )
  }
 
