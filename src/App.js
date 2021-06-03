@@ -3,18 +3,21 @@ import './App.css';
 
 import React from "react"
 import Book from './book'; 
+import bookData from './frases.json'
 
-export default () => { 
+function App() {
+    const BookComponents = bookData.map(phrase => <Book title = {phrase.title} author = {phrase.author}/>)
 
     return ( 
 
         <div> 
 
-            <Book title="Viatge a la Lluna" />
+            {BookComponents}
 
         </div> 
 
       );
+}
 
-};
+export default App;
 
